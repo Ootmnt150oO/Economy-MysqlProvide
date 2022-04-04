@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>me.onebone</groupId>
+  <artifactId>economyapi</artifactId>
+  <name>EconomyAPI</name>
+  <version>2.0.2</version>
+  <url>https://github.com/Nukkit-coders/EconomyAPI</url>
+  <build>
+    <defaultGoal>clean package</defaultGoal>
+    <resources>
+      <resource>
+        <filtering>true</filtering>
+        <directory>src/main/resources</directory>
+      </resource>
+    </resources>
+    <finalName>${project.name}</finalName>
+    <plugins>
+      <plugin>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>3.1.0</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+  <repositories>
+    <repository>
+      <id>nukkitx-repo</id>
+      <url>https://repo.nukkitx.com/snapshot</url>
+    </repository>
+  </repositories>
+  <dependencies>
+    <dependency>
+      <groupId>cn.nukkit</groupId>
+      <artifactId>nukkit</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+  <distributionManagement>
+    <repository>
+      <id>releases</id>
+      <name>nukkitx-releases</name>
+      <url>https://repo.nukkitx.com/release</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshots</id>
+      <name>nukkitx-snapshots</name>
+      <url>https://repo.nukkitx.com/snapshot</url>
+    </snapshotRepository>
+  </distributionManagement>
+  <properties>
+    <maven.compiler.target>17</maven.compiler.target>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.build.timestamp.format>HHmm-ddMMyyyy</maven.build.timestamp.format>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+</project>
+

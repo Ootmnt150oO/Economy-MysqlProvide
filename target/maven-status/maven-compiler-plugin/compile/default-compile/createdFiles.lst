@@ -1,0 +1,16 @@
+me\onebone\economyapi\command\SetMoneyCommand.class
+me\onebone\economyapi\task\AutoSaveTask.class
+me\onebone\economyapi\event\money\AddMoneyEvent.class
+me\onebone\economyapi\EconomyAPI.class
+me\onebone\economyapi\event\account\CreateAccountEvent.class
+me\onebone\economyapi\command\MyMoneyCommand.class
+me\onebone\economyapi\provider\YamlProvider.class
+me\onebone\economyapi\command\TopMoneyCommand.class
+me\onebone\economyapi\command\TakeMoneyCommand.class
+me\onebone\economyapi\command\SetLangCommand.class
+me\onebone\economyapi\command\GiveMoneyCommand.class
+me\onebone\economyapi\event\money\SetMoneyEvent.class
+me\onebone\economyapi\provider\Provider.class
+me\onebone\economyapi\event\money\ReduceMoneyEvent.class
+me\onebone\economyapi\provider\MySQLProvider.class
+me\onebone\economyapi\command\PayCommand.class

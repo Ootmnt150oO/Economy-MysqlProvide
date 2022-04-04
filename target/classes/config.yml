@@ -1,0 +1,13 @@
+money:
+  monetary-unit: "$"
+  default: 1000.0
+  max: 9999999999.0
+data:
+  auto-save-interval: 10
+  provider: yaml
+mysql:
+  ip: localhost
+  port: 3306
+  database: "economyapi"
+  username: "root"
+  password: "yourSecurePassword"
